@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { toast } from "sonner";
-import { EDGES, NODES, NODE_ORDER, baseCampaign, DEMO_BRIEF } from "./data";
+import { EDGES, NODES, NODE_ORDER, DEMO_BRIEF } from "./data";
+import { generateCampaign as baseCampaign } from "./workflowGenerator";
 import { runDirector } from "./director";
 import type { Campaign, DirectorMessage, WorkflowNode } from "./types";
 
